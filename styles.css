@@ -1,0 +1,52 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    display: flex;
+    background-color: #f3bbf2;
+    border: 6px solid #f79292; /* Simplificado para uma única linha */
+    border-radius: 10px;
+    
+    padding: 20px;
+    justify-content: space-around;
+    width: 400px;
+    margin: 10px auto;
+
+    /* SHADOW EFFECT: Adiciona profundidade ao card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+    /* TRANSITION: Garante que o efeito hover seja suave, não abrupto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT: O card sobe levemente e a sombra aumenta ao passar o mouse */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.avatar {
+    width: 150px;
+    border: 1px black solid;
+    border-radius: 10px;
+
+    /* ANIMATION: Aplica a animação definida no @keyframes abaixo */
+    animation: pulsar 2s infinite ease-in-out;
+}
+
+/* KEYFRAMES: Define o comportamento da animação (efeito de pulso) */
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.border-blue {
+    border: 1px solid rgb(4, 4, 7);
+}
+
+.center-text {
+    text-align: center;
+}
